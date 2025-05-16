@@ -1,0 +1,140 @@
+{
+    "opacity": 0.8,
+    "records": {
+        "健身环": 10,
+        "歌债": 10
+    },
+    "awards": [
+        {
+            "name": "实体礼物1",
+            "award_type": "限量",
+            "base_prob": 1,
+            "remaining": 5
+        },
+        {
+            "name": "实体礼物2",
+            "award_type": "限量",
+            "base_prob": 2,
+            "remaining": 5
+        },
+        {
+            "name": "实体礼物3",
+            "award_type": "限量",
+            "base_prob": 4,
+            "remaining": 5
+        },
+        {
+            "name": "健身环+1h",
+            "award_type": "健身环",
+            "base_prob": 15,
+            "operation": {
+                "type": "add",
+                "value": 1
+            }
+        },
+        {
+            "name": "健身环-1h",
+            "award_type": "健身环",
+            "base_prob": 15,
+            "operation": {
+                "type": "add",
+                "value": -1
+            }
+        },
+        {
+            "name": "健身环+100h",
+            "award_type": "健身环",
+            "base_prob": 5,
+            "operation": {
+                "type": "add",
+                "value": 100
+            }
+        },
+        {
+            "name": "健身环-100h",
+            "award_type": "健身环",
+            "base_prob": 5,
+            "operation": {
+                "type": "add",
+                "value": -100
+            }
+        },
+        {
+            "name": "健身环x2",
+            "award_type": "健身环",
+            "base_prob": 3,
+            "operation": {
+                "type": "mul",
+                "value": 2
+            }
+        },
+        {
+            "name": "健身环/2",
+            "award_type": "健身环",
+            "base_prob": 3,
+            "operation": {
+                "type": "div",
+                "value": 2
+            }
+        },
+        {
+            "name": "歌债+1",
+            "award_type": "歌债",
+            "base_prob": 15,
+            "operation": {
+                "type": "add",
+                "value": 1
+            }
+        },
+        {
+            "name": "歌债-1",
+            "award_type": "歌债",
+            "base_prob": 15,
+            "operation": {
+                "type": "add",
+                "value": -1
+            }
+        },
+        {
+            "name": "歌债+100",
+            "award_type": "歌债",
+            "base_prob": 5,
+            "operation": {
+                "type": "add",
+                "value": 100
+            }
+        },
+        {
+            "name": "歌债-100",
+            "award_type": "歌债",
+            "base_prob": 5,
+            "operation": {
+                "type": "add",
+                "value": -100
+            }
+        },
+        {
+            "name": "歌债x2",
+            "award_type": "歌债",
+            "base_prob": 3,
+            "operation": {
+                "type": "mul",
+                "value": 2
+            }
+        },
+        {
+            "name": "歌债/2",
+            "award_type": "歌债",
+            "base_prob": 3,
+            "operation": {
+                "type": "div",
+                "value": 2
+            }
+        },
+        {
+            "name": "谢谢参与",
+            "award_type": "其他",
+            "base_prob": 1
+        }
+    ]
+}
