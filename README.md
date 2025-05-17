@@ -3,7 +3,7 @@
 “一款可高度自定义、带图形界面的抽奖程序”
 
 ## 项目简介
-[视频介绍（还没做）]()
+[视频介绍](https://www.bilibili.com/video/BV1XMJPzwEUw/)
 
 CustomLottery 是一个基于 Python 和 Tkinter 的抽奖小工具，支持：
 
