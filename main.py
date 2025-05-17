@@ -15,7 +15,7 @@ from award import Award
 class LotteryApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("转盘")
+        self.title("Custom Lottery")
         self.geometry("600x600")
         self.load_config()
         self.create_awards()
