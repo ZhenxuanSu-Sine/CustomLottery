@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox, simpledialog
+from tkinter import ttk, messagebox
 import json, random
 import logging
 logging.basicConfig(
@@ -33,6 +33,10 @@ class LotteryApp(tk.Tk):
             messagebox.showerror("错误", f"配置文件 {config_file} 未找到")
             self.destroy()
             return
+        except IOError as e:
+            messagebox.showerror("错误", f"读取配置文件失败: {e}")
+            self.destroy()
+            return
         try:
             self.opacity = cfg.get('opacity', 1)
             self.records = cfg['records']
@@ -50,8 +54,13 @@ class LotteryApp(tk.Tk):
                 award.to_json() for award in self.awards
             ]
         }
-        with open(config_file, 'w', encoding='utf-8') as f:
-            json.dump(cfg, f, ensure_ascii=False, indent=4)
+        try:
+            with open(config_file, 'w', encoding='utf-8') as f:
+                json.dump(cfg, f, ensure_ascii=False, indent=4)
+        except IOError as e:
+            messagebox.showerror("错误", f"保存配置文件失败: {e}")
+            # self.destroy()
+            return
 
     def create_awards(self):
         try:

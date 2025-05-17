@@ -19,6 +19,7 @@ class Award:
         if self.operation:
             operation_map = {
                 'add': operator.add,
+                'sub': operator.sub,
                 'mul': operator.mul,
                 'div': operator.floordiv,
             }

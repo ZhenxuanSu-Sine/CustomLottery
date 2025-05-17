@@ -8,20 +8,20 @@
         {
             "name": "实体礼物1",
             "award_type": "限量",
-            "base_prob": 1,
+            "base_prob": 0.5,
             "remaining": 5
         },
         {
             "name": "实体礼物2",
             "award_type": "限量",
-            "base_prob": 2,
-            "remaining": 5
+            "base_prob": 2.5,
+            "remaining": 4
         },
         {
             "name": "实体礼物3",
             "award_type": "限量",
             "base_prob": 4,
-            "remaining": 5
+            "remaining": 2
         },
         {
             "name": "健身环+1h",
@@ -37,8 +37,8 @@
             "award_type": "健身环",
             "base_prob": 15,
             "operation": {
-                "type": "add",
-                "value": -1
+                "type": "sub",
+                "value": 1
             }
         },
         {
@@ -55,8 +55,8 @@
             "award_type": "健身环",
             "base_prob": 5,
             "operation": {
-                "type": "add",
-                "value": -100
+                "type": "sub",
+                "value": 100
             }
         },
         {
@@ -91,8 +91,8 @@
             "award_type": "歌债",
             "base_prob": 15,
             "operation": {
-                "type": "add",
-                "value": -1
+                "type": "sub",
+                "value": 1
             }
         },
         {
@@ -109,8 +109,8 @@
             "award_type": "歌债",
             "base_prob": 5,
             "operation": {
-                "type": "add",
-                "value": -100
+                "type": "sub",
+                "value": 100
             }
         },
         {
